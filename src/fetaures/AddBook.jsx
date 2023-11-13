@@ -17,15 +17,15 @@ export default function AddBook() {
     navigate("/viewbook")
   }
   return (
-    <div className="bg-[url('../../public/photo/Libraries.jpg')] bg-cover h-screen p-4 " > 
+    <div className="bg-gray-950 bg-cover h-screen p-4 " > 
       {/* <div className="h-[10rem] w-[10rem]  bg-gradient-to-r from-pink-400 to-blue-500 rounded-full absolute left-96 -top-26 transform rotate-180 animate-pulse"></div>
       <div className="h-[20rem] w-[20rem]  bg-gradient-to-r from-green-400 to-blue-500 rounded-full absolute -right-10 -top-36 transform rotate-180 animate-pulse"></div>
       <div className="h-[25rem] w-[25rem] bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full absolute -bottom-10 -left-20 transform rotate-180 animate-pulse"></div> */}
       <div className="flex flex-col mx-auto mt-5 max-w-[550px]  p-6 bg-white bg-opacity-10 rounded-2xl shadow-5xl relative z-2 border border-opacity-30 border-r-0 border-b-0 backdrop-filter backdrop-blur-sm">
-      <h1 className="text-center font-bold  mt-4 text-2xl">Add Book</h1>
+      <h1 className="text-center font-bold text-white mt-4 text-2xl">Add Book</h1>
       <div className="form-field w-[500px] mx-auto mt-5 rounded-xl">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="title" className="p-4  text-xl font-bold">Title:</label>
+        <label htmlFor="title" className="p-4 text-white text-xl font-bold">Title:</label>
         <input
           type="text"
           id="title"
@@ -36,7 +36,7 @@ export default function AddBook() {
           className="w-[250px] ml-6 mt-2 p-2 rounded-xl"
         />
         <br />
-        <label htmlFor="author" className="p-4  text-xl font-bold">Author:</label>
+        <label htmlFor="author" className="p-4 text-white text-xl font-bold">Author:</label>
         <input
           type="text"
           id="author"
